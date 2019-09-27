@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title></title>
-<meta name="author" content="(JJ Asghar)"/>
+<meta name="author" content="jj"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
 
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
-
+<link rel="stylesheet" href="https://revealjs.com/css/theme/white.css" id="theme"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -18,7 +16,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        link.href = 'https://revealjs.com/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -26,97 +24,139 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">JJ Asghar</h2><p class="date">Created: 2018-08-14 Tue 11:49</p>
+<section id="sec-title-slide">
+Testing out Org-mode and Reveal.js
 </section>
-<section id="table-of-contents">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#/slide-orgheadline1">1. H1</a></li>
-<li><a href="#/slide-orgheadline4">2. H2</a>
-<ul>
-<li><a href="#/slide-orgheadline3">2.1. H2.1</a>
-<ul>
-<li><a href="#/slide-orgheadline2">2.1.1. H2.1.1</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#/slide-orgheadline5">3. H3</a></li>
-</ul>
-</div>
-</div>
-</section>
+
+
 <section>
-<section id="slide-orgheadline1">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> H1</h2>
+<section id="slide-org47fad0e">
+<h2 id="org47fad0e">H1</h2>
 <p>
-This is H1
-Everything is built off of <a href="https://github.com/yjwen/org-reveal/">https://github.com/yjwen/org-reveal/</a>
+This is H1 Everything is built off of <a href="https://github.com/emacsmirror/org-re-reveal">https://github.com/emacsmirror/org-re-reveal</a>
 </p>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline4">
-<h2 id="orgheadline4"><span class="section-number-2">2</span> H2</h2>
+<section id="slide-org43d0fb3">
+<h2 id="org43d0fb3">H2</h2>
 <p>
 This is H2
 </p>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
 </section>
-<section id="slide-orgheadline3">
-<h3 id="orgheadline3"><span class="section-number-3">2.1</span> H2.1</h3>
+<section id="slide-orga851a0c">
+<h3 id="orga851a0c">H2.1</h3>
 <p>
 This is H2.1
 </p>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
 </section>
-<section id="slide-orgheadline2">
-<h4 id="orgheadline2"><span class="section-number-4">2.1.1</span> H2.1.1</h4>
+<section id="slide-org68d4c8e">
+<h4 id="org68d4c8e">H2.1.1</h4>
 <p>
 This is H2.1.1
 </p>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline5">
-<h2 id="orgheadline5"><span class="section-number-2">3</span> H3</h2>
-</section>
-</section>
-</div>
-</div>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<section id="slide-orgb5e8347" data-background="#123456">
+<h2 id="orgb5e8347">H3</h2>
 
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
+</section>
+</section>
+<section>
+<section id="slide-org7e42d2d" data-timing="120">
+<h2 id="org7e42d2d">Python</h2>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #ffad29; font-weight: bold;">def</span> <span style="color: #00ede1; font-weight: bold;">factorial</span>(n):
+    <span style="color: #ffad29; font-weight: bold;">if</span> n &lt; 2:
+        <span style="color: #ffad29; font-weight: bold;">return</span> 1
+    <span style="color: #ffad29; font-weight: bold;">else</span>:
+        <span style="color: #ffad29; font-weight: bold;">return</span> n * factorial(n - 1)
+
+<span style="color: #ffad29; font-weight: bold;">print</span>(factorial(10))
+</pre>
+</div>
+<p>
+Some more content
+</p>
+<aside class="notes">
+<p>
+Theses are some speaker notes
+</p>
+
+</aside>
+
+
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
+</section>
+</section>
+<section>
+<section id="slide-org8aa59a3">
+<h2 id="org8aa59a3">List Fragments</h2>
+<ul>
+<li data-fragment-index="4" class="fragment grow">I will grow.</li>
+<li data-fragment-index="3" class="fragment shrink">I will shrink.</li>
+<li data-fragment-index="2" class="fragment roll-in">I rolled in.</li>
+<li data-fragment-index="1" class="fragment fade-out">I will fade out.</li>
+<li>I don't fragment.</li>
+
+</ul>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
+</section>
+</section>
+<section>
+<section id="slide-org0f0a6e3">
+<h2 id="org0f0a6e3">List rolling in</h2>
+<ul>
+<li class="fragment appear">I appear.</li>
+<li class="fragment appear">I appear.</li>
+<li class="fragment appear">I appear.</li>
+
+</ul>
+<div class="slide-footer">JJ Asghar || @jjasghar || awesome@ibm.com</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://revealjs.com/lib/js/head.min.js"></script>
+<script src="https://revealjs.com/js/reveal.js"></script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 
 controls: true,
-progress: true,
+progress: false,
 history: false,
 center: true,
-slideNumber: 'c',
+slideNumber: false,
 rollingLinks: false,
 keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
 overview: true,
 
 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transition: Reveal.getQueryHash().transition || 'none', // see README of reveal.js for options
 transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
 
-// Optional libraries used to extend on reveal.js
+// Optional libraries used to extend reveal.js
 dependencies: [
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+
 });
 </script>
 </body>

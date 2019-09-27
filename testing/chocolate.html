@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="jj"/>
+    <style type="text/css">
+      .underline { text-decoration: underline; }
+    </style>
+    <link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
+
+    <link rel="stylesheet" href="https://revealjs.com/css/theme/serif.css" id="theme"/>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://revealjs.com/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+	<section>Slide 1</section>
+        <section>
+          <h2>Some Slide</h2>
+
+	  <aside class="notes">
+	    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+	  </aside>
+        </section>
+	<section>Slide 3</section>
+        <section>Single Horizontal Slide</section>
+	<section>
+	  <section>Vertical Slide 1</section>
+	  <section>Vertical Slide 2</section>
+	</section>
+        <section data-markdown>
+	  <textarea data-template>
+	    ## Page title
+
+            A paragraph with some text and a [link](http://hakim.se).
+
+            This is some more text with a picture below:
+            ![](https://raw.githubusercontent.com/adam-p/markdown-here/master/src/common/images/icon48.png)
+
+            ```python
+            s = "Python syntax highlighting"
+            print s
+            ```
+	  </textarea>
+        </section>
+        <section>
+	  <p class="fragment grow">grow</p>
+	  <p class="fragment shrink">shrink</p>
+	  <p class="fragment fade-out">fade-out</p>
+	  <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+	  <p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
+	  <p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
+	  <p class="fragment highlight-current-blue">blue only once</p>
+	  <p class="fragment highlight-red">highlight-red</p>
+	  <p class="fragment highlight-green">highlight-green</p>
+	  <p class="fragment highlight-blue">highlight-blue</p>
+        </section>
+        <section>
+	  <span class="fragment fade-in">
+	    <span class="fragment fade-out">I'll fade in, then out</span>
+	  </span>
+        </section>
+        <section>
+	  <p class="fragment" data-fragment-index="3">Appears last</p>
+	  <p class="fragment" data-fragment-index="1">Appears first</p>
+	  <p class="fragment" data-fragment-index="2">Appears second</p>
+        </section>
+        <section>
+	  <pre><code data-trim data-noescape>
+              (def lazy-fib
+              (concat
+              [0 1]
+              <mark>((fn rfib [a b]</mark>
+              (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+	  </code></pre>
+        </section>
+        <section>
+          <video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://revealjs.com/lib/js/head.min.js"></script>
+    <script src="https://revealjs.com/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+      controls: false,
+      progress: false,
+      history: false,
+      center: true,
+      slideNumber: false,
+      rollingLinks: false,
+      keyboard: true,
+      mouseWheel: false,
+      fragmentInURL: false,
+      hashOneBasedIndex: false,
+      pdfSeparateFragments: true,
+
+      overview: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'none', // see README of reveal.js for options
+      transitionSpeed: 'default',
+
+      // Optional libraries used to extend reveal.js
+      dependencies: [
+      { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true },
+      ]
+
+
+      });
+    </script>
+  </body>
+</html>

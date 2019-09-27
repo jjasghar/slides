@@ -1,6 +1,13 @@
+#+OPTIONS: toc:nil reveal_slide_number:nil reveal_progress:nil num:nil
+#+REVEAL_ROOT: https://revealjs.com/
+#+REVEAL_TITLE_SLIDE: Testing out Org-mode and Reveal.js
+#+REVEAL_SLIDE_FOOTER: JJ Asghar || @jjasghar || awesome@ibm.com
+#+REVEAL_THEME: white
+#+REVEAL_TRANS: none
+
+
 * H1
-This is H1
-Everything is built off of https://github.com/yjwen/org-reveal/
+This is H1 Everything is built off of https://github.com/emacsmirror/org-re-reveal
 * H2
 This is H2
 ** H2.1
@@ -8,3 +15,38 @@ This is H2.1
 *** H2.1.1
 This is H2.1.1
 * H3
+:PROPERTIES:
+:reveal_background: #123456
+:END:
+
+* Python
+:PROPERTIES:
+:reveal_extra_attr: data-timing="120"
+:END:
+#+BEGIN_SRC python
+def factorial(n):
+    if n < 2:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+print(factorial(10))
+#+END_SRC
+Some more content
+#+BEGIN_NOTES
+Theses are some speaker notes
+#+END_NOTES
+
+
+* List Fragments
+#+ATTR_REVEAL: :frag (grow shrink roll-in fade-out none) :frag_idx (4 3 2 1 -)
+   * I will grow.
+   * I will shrink.
+   * I rolled in.
+   * I will fade out.
+   * I don't fragment.
+* List rolling in
+#+ATTR_REVEAL: :frag (appear)
+   * I appear.
+   * I appear.
+   * I appear.
