@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="jj"/>
+    <style type="text/css">
+      .underline { text-decoration: underline; }
+    </style>
+    <link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
+
+    <link rel="stylesheet" href="https://revealjs.com/css/theme/white.css" id="theme"/>
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'https://revealjs.com/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+	<section>Slide 1</section>
+        <section>Slide 2</section>
+        <section>Slide 3</section>
+        <section>Slide 4</section>
+        <section>Slide 5</section>
+        <section>Slide 6</section>
+        <section>Slide 7</section>
+        <section>Slide 8</section>
+	<section>Slide 9</section>
+        <section>Slide 10</section>
+        <section>
+	  <p class="fragment grow">grow</p>
+	  <p class="fragment shrink">shrink</p>
+	  <p class="fragment fade-out">fade-out</p>
+	  <p class="fragment fade-up">fade-up (also down, left and right!)</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://revealjs.com/lib/js/head.min.js"></script>
+    <script src="https://revealjs.com/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+      autoSlide: 5000,
+      loop: true,
+      controls: false,
+      progress: false,
+      history: false,
+      center: true,
+      slideNumber: false,
+      rollingLinks: false,
+      keyboard: true,
+      mouseWheel: false,
+      fragmentInURL: false,
+      hashOneBasedIndex: false,
+      pdfSeparateFragments: true,
+
+      overview: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'none', // see README of reveal.js for options
+      transitionSpeed: 'default',
+
+      // Optional libraries used to extend reveal.js
+      dependencies: [
+      { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'https://revealjs.com/plugin/highlight/highlight.js', async: true },
+      { src: 'https://rajgoel.github.io/reveal.js-plugins/embed-tweet/embed-tweet.js' },
+      ]
+
+
+      });
+    </script>
+  </body>
+</html>
