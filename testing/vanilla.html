@@ -5,6 +5,12 @@
     <meta name="author" content="jj"/>
     <style type="text/css">
       .underline { text-decoration: underline; }
+      .container{
+        display: flex;
+      }
+      .col{
+        flex: 1;
+      }
     </style>
     <link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
 
@@ -105,6 +111,19 @@
 	    </tbody>
 	  </table>
 	</section>
+        <section>
+          <div class="container">
+            <div class="col">
+              <p>Column 1 Content and me filling in as much as I can, lets see if this formats like expect.</p>
+            </div>
+            <div class="col">
+              <h2> Column 2 </h2>
+	      <p class="fragment grow">grow</p>
+	      <p class="fragment shrink">shrink</p>
+	      <p class="fragment fade-out">fade-out</p>
+            </div>
+          </div>
+        </section>
         <section>
 	  <h2>Clever Quotes</h2>
 	  <p>
