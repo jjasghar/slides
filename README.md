@@ -1,7 +1,13 @@
 # JJ's Slide repo
 
-Hi! :wave: Thanks fro stopping by. This is my slides repo, and I try
+Hi! Thanks fro stopping by. This is my slides repo, and I try
 to put anything that I need to publish here.
+
+## Content
+
+- [Dadjokes](./dadjokes.html)
+- [DevOpsDays Kansas City Karaoke 2019](./dodkc_karaoke.html)
+- [Lessons Learned from Cultivating Open Source Projects and Communities](./lessons_learned_from_cultivating_open_source_projects.html)
 
 ## Questions?
 
