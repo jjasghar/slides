@@ -13,7 +13,7 @@
       }
     </style>
     <link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
-
+    <link rel="stylesheet" href="plugin/title-footer/title-footer.css">
     <link rel="stylesheet" href="https://revealjs.com/css/theme/white.css" id="theme"/>
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -34,10 +34,12 @@
 	<section>Slide 1</section>
         <section>
           <h2>Some Slide</h2>
-
+          <h3>A test to see how footers works</h3>
+	  <p>Reveal.js-Title-Footer is a plugin for the Reveal.js framework for HTML presentations (<a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a>).</p>
 	  <aside class="notes">
 	    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
 	  </aside>
+          
         </section>
 	<section>Slide 3</section>
         <section>Single Horizontal Slide</section>
@@ -179,14 +181,15 @@
       transitionSpeed: 'default',
 
       // Optional libraries used to extend reveal.js
-      dependencies: [
-      { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'https://revealjs.com/plugin/highlight/highlight.js', async: true },
-      { src: 'https://rajgoel.github.io/reveal.js-plugins/embed-tweet/embed-tweet.js' },
+          dependencies: [
+              { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'https://revealjs.com/plugin/highlight/highlight.js', async: true },
+              { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(); } },
+              { src: 'https://rajgoel.github.io/reveal.js-plugins/embed-tweet/embed-tweet.js' },
       ]
 
 
