@@ -12,9 +12,9 @@
           flex: 1;
       }
     </style>
-    <link rel="stylesheet" href="https://revealjs.com/css/reveal.css"/>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/hakimel/reveal.js/master/dist/reveal.css"/>
 
-    <link rel="stylesheet" href="https://revealjs.com/css/theme/white.css" id="theme"/>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/hakimel/reveal.js/master/dist/theme/white.css" id="theme"/>
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -221,16 +221,12 @@
 
           // Optional libraries used to extend reveal.js
           dependencies: [
-              { src: 'https://revealjs.com/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: 'https://revealjs.com/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-              { src: 'https://revealjs.com/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-              { src: 'https://revealjs.com/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
-              { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-              { src: 'https://revealjs.com/plugin/highlight/highlight.js', async: true },
+              { src: 'https://raw.githubusercontent.com/hakimel/reveal.js/master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'https://raw.githubusercontent.com/hakimel/reveal.js/master/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'https://raw.githubusercontent.com/hakimel/reveal.js/master/plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'https://raw.githubusercontent.com/hakimel/reveal.js/master/plugin/highlight/highlight.js', async: true },
               { src: 'https://rajgoel.github.io/reveal.js-plugins/embed-tweet/embed-tweet.js' },
           ]
-
-
       });
     </script>
   </body>
